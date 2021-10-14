@@ -1,5 +1,5 @@
 # Personal Command Line Files
-Repo to store my WSL/Terminal Setting Files.
+Repo to store my WSL/Terminal Settings Files.
 
 
 ## Vim
