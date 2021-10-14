@@ -1,2 +1,9 @@
-# cmd-settings
-Repo to store my WSL/Terminal Setting Files
+# Personal Command Line Files
+Repo to store my WSL/Terminal Setting Files.
+
+
+## Vim
+Under the Vim folder, my personally curated .vimrc file is stored.
+
+## Tmux
+Under the Tmux folder, my personal .tmux.conf file is stored.
