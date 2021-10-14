@@ -56,9 +56,9 @@ call plug#begin('~/.vim/plugged')
 " Plug 'wojciechkepka/vim-github-dark'
 
 " use fatih/vim-go for golang syntax highlighting
-" the tag is set to v1.21 since v1.22
-" set minimum vim version to 8.0.1453
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'tag': 'v1.21'}
+" the tag is set to * for most recent version,
+" other tags can be used for different versions
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'tag': '*'}
 
 " initialize plugin system
 call plug#end()
@@ -72,4 +72,11 @@ call plug#end()
 " let g:gh_color = 'soft'
 
 " disable update of dependencies for vim-go
-let g:go_get_update=1
+" default is 1, enabled
+" if tag is set in Plug, do not run
+" let g:go_get_update=1
+
+" disable warning for incompative version of vim
+" default is 1, enabled
+" if tag is set in Plug, run command
+" let g:go_version_warning=0
