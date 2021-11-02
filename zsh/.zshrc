@@ -35,7 +35,7 @@ zstyle ':vcs_info:*' formats ' %s(%b)' # git(main)
 # set terminal prompt
 export DEFAULT_USER="$(whoami)"
 setopt prompt_subst
-PS1='%n@%m %~%f${vcs_info_msg_0_} $ '
+PS1='%n@%m %2d%f${vcs_info_msg_0_} $ '
 
 # set r home
 export R_HOME=/Library/Frameworks/R.framework/Resources/
