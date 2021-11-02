@@ -93,7 +93,7 @@ module.exports = {
         //
         // Cygwin
         // - Example: `C:\\cygwin64\\bin\\bash.exe`
-        shell: '',
+        shell: '/bin/zsh',
         // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
         // by default `['--login']` will be used
         shellArgs: ['--login'],
@@ -164,7 +164,7 @@ module.exports = {
       "gitrocket",
       //"hyper-spotify"
       "hyper-tabs-enhanced",
-      //"hyper-transparent"
+      //"hyper-transparent",
       ],
     // in development, you can create a directory under
     // `~/.hyper_plugins/local/` and include it here
