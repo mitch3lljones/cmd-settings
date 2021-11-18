@@ -51,21 +51,22 @@ endif
 " begin adding vim plugins
 call plug#begin('~/.vim/plugged')
 
-" add vim theme github-dark theme based on VS Code GitHub dark theme
+" add vim theme arcticicestudio/nord-vim
 " commented out on systems where Hyper.js is used
-" Plug 'wojciechkepka/vim-github-dark'
+" Plug 'arcticicestudio/nord-vim'
 
 " use fatih/vim-go for golang syntax highlighting
 " the tag is set to * for most recent version,
 " other tags can be used for different versions
+" for vim compatibility
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries', 'tag': '*'}
 
 " initialize plugin system
 call plug#end()
 
-" initialize github dark colorscheme from vim-plug
+" initialize nord-vim colorscheme from vim-plug
 " commented out on systems where Hyper.js is used
-" colorscheme ghdark
+" colorscheme nord
 
 " use softer colorscheme for ghdark
 " commented out on systems where Hyper.js is used
@@ -74,9 +75,9 @@ call plug#end()
 " disable update of dependencies for vim-go
 " default is 1, enabled
 " if tag is set in Plug, do not run
-" let g:go_get_update=1
+let g:go_get_update=1
 
-" disable warning for incompative version of vim
+" disable warning for incompatible version of vim
 " default is 1, enabled
 " if tag is set in Plug, run command
 " let g:go_version_warning=0
