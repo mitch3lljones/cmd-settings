@@ -39,7 +39,15 @@ PS1="[\d \t \u@\h:\w\a]$PS1"
 #fi
 
 # Start zsh shell if not already in
-exec zsh
+# exec zsh
+
+# Alias definitions.
+# You may want to put all your additions into a separate file like
+# ~/.bash_aliases, instead of adding them here directly.
+# See /usr/share/doc/bash-doc/examples in the bash-doc package.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
 # Export path for google cloud sdk
 export PATH="/usr/lib/google-cloud-sdk/bin:$PATH"
