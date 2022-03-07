@@ -3,7 +3,7 @@
 # except . (dot) and .. (dot-dot) (A), slashes after name if dir (F) and
 # sizes converted from bytes to KB, MB, etc (human-readable). The output is
 # displayed by most recently modified then name
-alias la="ls -ltAF --human-readable"
+alias llt="ls -ltAF --human-readable"
 
 # lr prints out the files with the links, owner, group, size in bytes,
 # and last mod time (l), sorted by time of last mod (t), then reversed by
@@ -11,13 +11,13 @@ alias la="ls -ltAF --human-readable"
 # and .. (dot-dot) (A), slashes after name if dir (F) and sizes converted
 # from bytes to KB, MB, etc (human-readable). The output is displayed by 
 # least recently modified then by name
-alias lr="ls -ltrAF --human-readable"
+alias llr="ls -ltrAF --human-readable"
 
 # ll prints out the files with the links, owner, group, size in bytes,
 # and last mod time (l), sorted by time of last mod (t), slashes after name
 # if dir (F) and sizes converted from bytes to KB, MB, etc (human-readable).
 # The output is displayed by least recently modified then by name.
-alias ll="ls -ltF --human-readable"
+alias ll="ls -laF --human-readable"
 
 # tls lists all tmux sessions
 alias tls="tmux ls"
