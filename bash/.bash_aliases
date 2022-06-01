@@ -63,6 +63,13 @@ djob() {
 	sendevent -j $1 -e DELETEJOB
 }
 
+# kjob runs a send event to force stop a job. Since alias can't take parameters,
+# a function is used. The parameter passed should be the job (or partial job
+# string with wildcards) to stop
+kjob() {
+	sendevent -j $1 -e KILLJOB
+}
+
 # onice runs a send event to set a job on ice. Since alias can't take parameters,
 # a function is used. The parameter passed should be the job (or partial job string
 # with wildcards) to set on ice
